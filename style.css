@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'MaplestoryOTFBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'MaplestoryOTFBold';
+    margin: 0px;
+    word-break: keep-all;
+}
+
+section {   
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke; 
+}
+
+.contents_box {
+    width: 550px;
+    height: 100vh;
+    background-color:  #adb5bd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    font-family: 'MaplestoryOTFBold';
+    font-size: 15px;
+    width: 300px;
+    height: 50px;
+    border-radius: 300px;
+    margin-top: 10px;
+    box-shadow: 5px 5px black;
+}
+
+.status {
+    margin-top: 30px;
+}
+
+#status_bar_in {
+    width: 10%;
+}
+
+#test_description, #question, #result_description {
+    width: 300px;
+}
+
+.logo {
+    font-size: 30px;
+    text-shadow: 2px 2px 2px gray;
+}
+
+#result_job {
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.question, #test_description, #result_description {
+    width: 350px;
+    font-size: 25px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+}
+
+#illustration {
+    width: 550px;
+}
+
+#result {
+    height: auto;
+}
+
+#result div {
+    margin-top: 20px;
+}
+@media (max-width: 550px){
+    .section{
+        width: 100%;
+    }
+    #illustration {
+        width: 100%;
+    }
+}
