@@ -54,6 +54,7 @@ section {
 #result_job {
     font-size: 25px;
     color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
 }
 
 .question, #test_description {
@@ -86,7 +87,7 @@ section {
     width: 550px;
 }
 
-#result_page .contents_box {
+#result {
     height: auto;
 }
 
