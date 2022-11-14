@@ -46,10 +46,6 @@ section {
     width: 10%;
 }
 
-#test_description, #question, #result_description {
-    width: 300px;
-}
-
 .logo {
     font-size: 30px;
     text-shadow: 2px 2px 2px gray;
@@ -61,7 +57,7 @@ section {
 }
 
 .question, #test_description, #result_description {
-    width: 350px;
+    width: 90%;
     font-size: 25px;
     color: whitesmoke;
     text-shadow: 2px 2px 2px black;
