@@ -56,12 +56,26 @@ section {
     color: whitesmoke;
 }
 
-.question, #test_description, #result_description {
+.question, #test_description {
     width: 90%;
     font-size: 25px;
     color: whitesmoke;
     text-shadow: 2px 2px 2px black;
 }
+
+#recommend {
+    width: 90%;
+    font-size: 25px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+    text-align: left;
+}
+
+#result_description {
+    width: 90%;
+    font-size: 20px;
+}
+
 #result_box{
     display: flex;
     flex-direction: column;
@@ -76,9 +90,14 @@ section {
     height: auto;
 }
 
+p {
+    text-align: center;
+}
+
 #result div {
     margin-top: 20px;
 }
+
 @media (max-width: 550px){
     .section{
         width: 100%;
