@@ -86,7 +86,7 @@ section {
     width: 550px;
 }
 
-#result {
+#result_page .contents_box {
     height: auto;
 }
 
