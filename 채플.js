@@ -1,3 +1,4 @@
+var gray
 function Calculation(){
   var MBTI=""
   if (E>I)
@@ -55,8 +56,68 @@ function Calculation(){
         MBTI=MBTI+"J"
       }
     }
+    document.getElementById("MBTI").innerHTML=MBTI;
   }
-  document.getElementById("MBTI").innerHTML=MBTI;
+  if (gray==1)
+  {
+    if (MBTI=="ESP"||MBTI=="ESJ"||MBTI=="ENP"||MBTI=="ENJ")
+    {
+    //게임 기획자, 게임 프로그래머, 게임 그래픽 디자이너//
+    document.getElementById("result_box1").style.display="none";
+    document.getElementById("result_box3").style.display="none";
+    document.getElementById("result_box4").style.display="none";
+    document.getElementById("result_box5").style.display="none";
+    document.getElementById("result_box6").style.display="none";
+    }
+    else if (MBTI=="ISP"||MBTI=="ISJ"||MBTI=="INP"||MBTI=="INJ")
+    {
+    //공간스캐닝 소프트웨어 개발자, 가상현실전문가, 증강현실전문가//
+    document.getElementById("result_box1").style.display="none";
+    document.getElementById("result_box2").style.display="none";
+    document.getElementById("result_box3").style.display="none";
+    document.getElementById("result_box4").style.display="none";
+    document.getElementById("result_box6").style.display="none";
+    }
+  }
+  else if (gray==2)
+  {
+    if (MBTI=="ISJ"||MBTI=="ISP")
+    {
+      //빅 데이터 엔지니어, 빅 데이터 분석가, 데이터 과학자//
+      document.getElementById("result_box2").style.display="none";
+      document.getElementById("result_box3").style.display="none";
+      document.getElementById("result_box4").style.display="none";
+      document.getElementById("result_box5").style.display="none";
+      document.getElementById("result_box6").style.display="none";
+    }
+    else if (MBTI=="INP"||MBTI=="INJ")
+    {
+      //서버 보안 전문가, 악성 코드 전문가, 모의 해킹 전문가//
+      document.getElementById("result_box1").style.display="none";
+      document.getElementById("result_box2").style.display="none";
+      document.getElementById("result_box4").style.display="none";
+      document.getElementById("result_box5").style.display="none";
+      document.getElementById("result_box6").style.display="none";
+    }
+    else if (MBTI=="ESP"||MBTI=="ENP")
+    {
+      //초중학교 정보 선생님, 컴퓨터 전문 강사//
+      document.getElementById("result_box1").style.display="none";
+      document.getElementById("result_box2").style.display="none";
+      document.getElementById("result_box3").style.display="none";
+      document.getElementById("result_box5").style.display="none";
+      document.getElementById("result_box6").style.display="none";
+    }
+    else if (MBTI=="ESJ"||MBTI=="ENJ")
+    {
+      //소프트웨어 개발자, 임베디드 개발자//
+      document.getElementById("result_box1").style.display="none";
+      document.getElementById("result_box2").style.display="none";
+      document.getElementById("result_box3").style.display="none";
+      document.getElementById("result_box4").style.display="none";
+      document.getElementById("result_box5").style.display="none";
+    }
+  }
 }
 
 window.addEventListener('load', function () {
@@ -83,7 +144,7 @@ window.addEventListener('load', function () {
     }
     else
     {
-      i+=1
+      I+=1
     }
   }
   function offDisplayQ2(a){
@@ -127,7 +188,7 @@ window.addEventListener('load', function () {
     }
     else
     {
-      i+=1
+      I+=1
     }
   }
   function offDisplayQ6(a){
@@ -160,7 +221,7 @@ window.addEventListener('load', function () {
     }
     else
     {
-      i+=1
+      I+=1
     }
   }
   function offDisplayQ9(a){
@@ -198,6 +259,14 @@ window.addEventListener('load', function () {
   }
   function offDisplayQ12(a){
     document.getElementById("Q12").style.display="none";
+    if (document.getElementById(a.getAttribute('id')).getAttribute('id')=='Q12_1')
+    {
+      gray=1
+    }
+    else
+    {
+      gray=2
+    }
   }
  function offDisplaystartbutton(){
     document.getElementById("start_page").style.display="none";

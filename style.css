@@ -14,13 +14,13 @@ body {
 section {   
     display: flex;
     justify-content: center;
-    background-color: whitesmoke; 
+    background-color: white; 
 }
 
 .contents_box {
     width: 550px;
     height: 100vh;
-    background-color:  white;
+    background-color:  #fffafa;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -48,7 +48,7 @@ section {
 
 .logo {
     font-size: 30px;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px gray;
 }
 
 #result_job {
@@ -59,39 +59,33 @@ section {
 
 .question, #test_description {
     width: 300px;
-    height: 200px;
     font-size: 25px;
-    color: white;
-    text-shadow: -1px 0 #000, 2px 2px 2px #000, 1px 0 #000, 0 -1px #000;
-    border: 3px solid black;
-    border-radius: 30px;
-    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #recommend {
-    width: 90%;
+    width: auto;
     font-size: 20px;
-    color: whitesmoke;
+    color: white;
     text-shadow: -1px 0 #000, 2px 2px 2px #000, 1px 0 #000, 0 -1px #000;
-    text-align: left;
+    text-align: center;
     line-height: 30px;
 }
 
 .result_description {
     width: 80%;
     font-family: none;
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 12px;
     padding: 10px;
-    border: 3px solid black;
-    border-radius: 30px;
+    border: 3px solid gray;
+    border-radius: 10px;
     text-align: left;
+    background-color: white;
 }
 
-#result_box{
+.for_flex{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,10 +100,12 @@ section {
     height: auto;
 }
 
-p {
-    color: #000;
-    text-shadow: none;
-    text-align: center;
+li {
+    text-align: left;
+}
+
+li::marker {
+    color: black;
 }
 
 #result div {
@@ -117,7 +113,7 @@ p {
 }
 
 @media (max-width: 550px){
-    .section{
+    .contents_box{
         width: 100%;
     }
 }
