@@ -56,11 +56,10 @@ function Calculation(){
         MBTI=MBTI+"J"
       }
     }
-    document.getElementById("MBTI").innerHTML=MBTI;
   }
   if (gray==1)
   {
-    if (MBTI=="ESP"||MBTI=="ESJ"||MBTI=="ENP"||MBTI=="ENJ")
+    if (MBTI=="ESP"||MBTI=="ESJ"||MBTI=="ENP"||MBTI=="ENJ") //완//
     {
     //게임 기획자, 게임 프로그래머, 게임 그래픽 디자이너//
     document.getElementById("result_box1").style.display="none";
@@ -69,7 +68,7 @@ function Calculation(){
     document.getElementById("result_box5").style.display="none";
     document.getElementById("result_box6").style.display="none";
     }
-    else if (MBTI=="ISP"||MBTI=="ISJ"||MBTI=="INP"||MBTI=="INJ")
+    else if (MBTI=="ISP"||MBTI=="ISJ"||MBTI=="INP"||MBTI=="INJ") //완//
     {
     //공간스캐닝 소프트웨어 개발자, 가상현실전문가, 증강현실전문가//
     document.getElementById("result_box1").style.display="none";
@@ -81,7 +80,7 @@ function Calculation(){
   }
   else if (gray==2)
   {
-    if (MBTI=="ISJ"||MBTI=="ISP")
+    if (MBTI=="ISJ"||MBTI=="ISP") //완//
     {
       //빅 데이터 엔지니어, 빅 데이터 분석가, 데이터 과학자//
       document.getElementById("result_box2").style.display="none";
@@ -90,7 +89,7 @@ function Calculation(){
       document.getElementById("result_box5").style.display="none";
       document.getElementById("result_box6").style.display="none";
     }
-    else if (MBTI=="INP"||MBTI=="INJ")
+    else if (MBTI=="INP"||MBTI=="INJ") //완//
     {
       //서버 보안 전문가, 악성 코드 전문가, 모의 해킹 전문가//
       document.getElementById("result_box1").style.display="none";
@@ -99,7 +98,7 @@ function Calculation(){
       document.getElementById("result_box5").style.display="none";
       document.getElementById("result_box6").style.display="none";
     }
-    else if (MBTI=="ESP"||MBTI=="ENP")
+    else if (MBTI=="ESP"||MBTI=="ENP") //완//
     {
       //초중학교 정보 선생님, 컴퓨터 전문 강사//
       document.getElementById("result_box1").style.display="none";
@@ -108,7 +107,7 @@ function Calculation(){
       document.getElementById("result_box5").style.display="none";
       document.getElementById("result_box6").style.display="none";
     }
-    else if (MBTI=="ESJ"||MBTI=="ENJ")
+    else if (MBTI=="ESJ"||MBTI=="ENJ") //완//
     {
       //소프트웨어 개발자, 임베디드 개발자//
       document.getElementById("result_box1").style.display="none";
